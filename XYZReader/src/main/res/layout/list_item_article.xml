@@ -3,10 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="@dimen/margin_card"
+    android:layout_marginRight="@dimen/margin_card"
+    android:layout_marginTop="@dimen/margin_card"
+    android:layout_marginBottom="@dimen/margin_card"
+    android:elevation="@dimen/cardview_elevation"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?selectableItemBackground">
@@ -22,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@color/photo_placeholder"
+            android:scaleType="centerCrop"
             android:transitionName="@string/image_transtion"
             />
 
